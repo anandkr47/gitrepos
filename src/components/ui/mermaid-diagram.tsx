@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 "use client";
 
 import React, { useCallback, useEffect, useRef, useState } from "react";
@@ -462,11 +463,6 @@ export function MermaidDiagram({
       return "graph TD\n    A[Error] --> B[In] --> C[Processing]";
     }
   }, [processDefinition, validateAndFixDiagram]);
-        useMaxWidth: true,
-        htmlLabels: true,
-      },
-    });
-  }, []);
 
   // Render the diagram
   const renderDiagram = useCallback(async () => {
